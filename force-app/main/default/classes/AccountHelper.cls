@@ -2,7 +2,7 @@ public with sharing class AccountHelper {
     public static Account createAccount(String name) {
         Account acc = new Account(Name = name);
         insert acc;
-        return acc;
+        return account;
     }
 
     public static List<Account> getAccountsByName(String accountName) {
