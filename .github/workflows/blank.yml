@@ -44,7 +44,7 @@ jobs:
         with:
           scanChangedFilesOnly: true
           organization: branch-error
-          projectKey: R-acts
+          projectKey: delete4
           codeScanUrl: https://test.codescan.io/
           login: ${{ secrets.CODESCAN_TOKEN }}
           generateSarifFile: true
@@ -55,7 +55,7 @@ jobs:
         with:
           scanChangedFilesOnly: true
           organization: branch-error
-          projectKey: R-acts
+          projectKey: delete4
           codeScanUrl: https://test.codescan.io/
           login: ${{ secrets.CODESCAN_TOKEN }}
           generateSarifFile: true
