@@ -23,7 +23,7 @@ permissions:
   actions: read
 
 jobs:
-  build:     environment: preview
+  build:     environment: test
     runs-on: macos-latest
 
     steps:
@@ -43,9 +43,9 @@ jobs:
         uses: codescan-io/codescan-scanner-action@1.6
         with:
           scanChangedFilesOnly: true
-          organization: users-invitation
-          projectKey: integration-acts
-          codeScanUrl: https://preview.codescan.io/
+          organization: branch-error
+          projectKey: R-acts
+          codeScanUrl: https://test.codescan.io/
           login: ${{ secrets.CODESCAN_TOKEN }}
           generateSarifFile: true
 
@@ -54,9 +54,9 @@ jobs:
         uses: codescan-io/codescan-scanner-action@1.6
         with:
           scanChangedFilesOnly: true
-          organization: users-invitation
-          projectKey: integration-acts
-          codeScanUrl: https://preview.codescan.io/
+          organization: branch-error
+          projectKey: R-acts
+          codeScanUrl: https://test.codescan.io/
           login: ${{ secrets.CODESCAN_TOKEN }}
           generateSarifFile: true
           args: |
