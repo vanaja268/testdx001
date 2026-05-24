@@ -8,4 +8,7 @@ public with sharing class AccountHelper {
     public static List<Account> getAccountsByName(String accountName) {
         return [SELECT Id, Name FROM Account WHERE Name = :accountName LIMIT 10];
     }
+public static List<Account> getAccountsByName(String accountName) {
+        return [SELECT Id, Name FROM Account WHERE Name = :accountName LIMIT 10];
+    }
 }
